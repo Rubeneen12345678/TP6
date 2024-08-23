@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgb(72, 73, 73);
+}
+header nav ul{
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header nav ul li {
+    list-style: none;
+    display: flex;
+    padding: 20px 10px 0px 0px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+header nav ul li a:hover {
+    background: transparent;
+    color: rgb(10, 255, 10);
+}
+h1 {
+    display: flex;
+    justify-content: center;  
+    color: rgb(126, 38, 38);
+    background-color: rgb(136, 134, 134); 
+}
+section {
+   
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 0px 47px;
+    color: rgb(201, 57, 57);
+    width: 100%;
+}
+section:hover {
+    background: grey;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top:100%;
+    width:100%;
+    height:20px;
+    align-items: flex-end;
+    background-color: rgb(136, 134, 134);
+}
+h3{
+align-content: center;
+}
+.contact-wrapper {
+    display: grid;
+    background-color: black;
+    color: white;
+}
+h3{
+    text-align: center;
+    }
+form {
+    display: grid;
+    align-items: center;
+    color: rgb(255, 174, 0);
+}
+input {
+    outline: 0;
+    border: 1px solid rgb(192, 103, 103);
+    border-radius: 15px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+}
+input:hover {
+    background-color: rgb(255, 214, 152);
+}
+textarea {
+    outline: 0;
+    border: 1px solid rgb(192, 103, 103);
+    border-radius: 15px;
+    background: transparent;
+}
+textarea:hover {
+    background-color: rgb(255, 214, 152);
+}
+.contact-info {
+padding: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    
+}
+.contact-info ul {
+    list-style: none;
+}
+.contact-form {
+text-align: center;
+}
+@media (min-width: 425px) {
+    .contact-wrapper {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        background-color: black;
+        color: white;
+        
+        }
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            color: rgb(255, 174, 0);
+        }
+}
+@media (max-whidth: 424px) {
+input{
+    outline: 0;
+    border: 1px solid rgb(192, 103, 103);
+    border-radius: 15px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    align-items: center;
+}
+body{
+    width: 100%;
+}
+}
